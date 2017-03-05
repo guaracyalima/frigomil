@@ -1,0 +1,124 @@
+
+.calculator-title{
+  font-family: $fonte-padaro;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 52px;
+  color: #000000;
+}
+
+.calculator-description{
+  font-family: $fonte-padaro;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  color: #666666;
+  float: left;
+}
+
+.section-buttons-calculator{
+  display: inline;
+  text-align: center;
+}
+
+.section-buttons-calculator a, a:link, a:hover{
+  text-decoration: none;
+}
+
+a, a:link, a:hover{
+  text-decoration: none;
+}
+
+.calculator-button{
+  font-family: $fonte-padaro;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 28px;
+  color: #494848;
+  padding-top: 0.2em;
+  height: 40px;
+  background-color: rgba(192,0,0,0.2);
+  border-radius: 100px;
+  width: 177px;
+  float: right;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+#calculator-input{
+  width: 139px;
+  height: 131px;
+  background-color: rgba(192,0,0,0.2);
+
+  //fonte
+
+  font-family: $fonte-padaro;
+  font-size: 64px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 87px;
+  color: rgba(0,0,0,0.5);
+}
+#calculator-input::placeholder{
+  color: #000000;
+  opacity: 100;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+#calculator-input-participants-number{
+  font-family: $fonte-padaro;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: italic;
+  //line-height: 87px;
+  color: #000000;
+}
+
+#button-calculator{
+  width: 263px;
+  height: 56px;
+  background-color: #C00000;
+  border-radius: 3px;
+  //font
+  font-family: $fonte-padaro;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 24px;
+  color: #FFFFFF;
+  float: right;
+  padding-top: 1em;
+}
+
+.calculator-hr{
+  width: 100%;
+  box-sizing: border-box;
+  height: 2px;
+  opacity: 0.1;
+  border: 1px solid #000000;
+}
+
+
+#back-to-top{
+  font-size: 20px;
+  & a{
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.claculator-buttons{
+  display: inline;
+  list-style: none;
+}
+
+.claculator-buttons-secondary{
+  display: inline;
+  list-style: none;
+
+}

@@ -1,0 +1,40 @@
+
+.about-title{
+  font-family: $fonte-padaro;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 64px;
+  color: #000000;
+}
+
+.about-slogan{
+  font-family: $fonte-padaro;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #666666;
+}
+
+.about-description{
+  font-family: $fonte-padaro;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: justify;
+  color: #666666;
+}
+
+.social-nav-about li{
+  display: inline;
+  //font-size: 25px;
+  //margin-left: 0.6em;
+  //text-align: center;
+  //border-radius: 50%;
+}
+
+.social-nav-about-item img{
+  width: 20px;
+  height: 20px;
+  //background: #000000;
+  border-radius: 50%;
+  opacity: 0.3;
+}

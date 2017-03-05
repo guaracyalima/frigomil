@@ -1,0 +1,45 @@
+
+@media only screen and (max-width: 40em) {
+
+  .carousel,
+  .item,
+  .active {
+    height: 100%;
+    padding-top: 8%;
+  }
+
+  #topo-title-head{
+    font-family: $fonte-padaro;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: left;
+    width: 110%;
+    margin-left: -2em;
+    top: 2em;
+  }
+
+  #topo-text-head {
+    opacity: 0.6;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: #FFFFFF;
+    width: 90%;
+    position: relative;
+    text-align: left;
+    margin-left: -2em;
+    top: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 40em) and (orientation: landscape){
+  .carousel,
+  .item,
+  .active {
+    height: 100%;
+    padding-top: 0%;
+  }
+}
