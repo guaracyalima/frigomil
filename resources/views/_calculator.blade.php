@@ -38,7 +38,7 @@
 
                 </div>
                 {{--<p class="calculator-hr"></p>--}}
-                <div class="row">
+                <div class="row claculadora1">
                     <div class="calculator-define">
                         <div class="col-md-3">
                             <input type="text" id="calculator-input" placeholder="00">
@@ -49,10 +49,24 @@
                         </div>
 
                         <div class="com-md-3">
-                            <a href="#" class="btn" id="button-calculator">Calcular</a>
+                            <button href="" class="btn" id="button-calculator" onclick="calculaChurrasco()">Calcular</button>
                         </div>
                     </div>
                 </div>
+
+                {{--<div class="row claculadora2">--}}
+                    {{--<p>Churrasco de : Name & Name</p>--}}
+                    {{--<div class="col-md-6">--}}
+                        {{--<i class="material-icons">person</i>--}}
+                        {{--<input type="text" id="convidadsos" placeholder="0">--}}
+                        {{--<p id="convidados">Convidados</p>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-6">--}}
+                        {{--<p id="linha"></p>--}}
+                        {{--<p id="total">Total</p>--}}
+                        {{--<p id="valor-total">R$ <input type="text" id="valor"></p>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
                 <p id="back-to-top" class="text-center">
                     <a href="#"><i class="material-icons">expand_less</i></a>

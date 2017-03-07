@@ -13,4 +13,15 @@ const { mix } = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+
+
+//ADMIN
+//.js('resources/admin/assets/js/app.js', 'admin/js')
+//mix.sass('resources/assets/admin/sass/app.scss', 'admin/css');
+
+
+
+
+
 mix.browserSync('http://127.0.0.1:8000/');

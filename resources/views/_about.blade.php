@@ -11,25 +11,23 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <p class="about-title">Frigomil</p>
-                                <p class="about-slogan">Confiança qualidade e vida</p>
+                                @foreach($sobre as $item)
+                                <p class="about-title">{{$item->titulo}}</p>
+                                <p class="about-slogan">{{ $item->slogan }}</p>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <p class="about-description">
-                                            Eos perpetua accommodare ei, sit ea decore dictas maiestatis,
-                                            an vel quot epicurei complectitur. Ad nec detracto fabellas repudiandae,
-                                            ad tale quando has, homero fuisset inciderint ea vim
+                                            {{ $item->coldireita }}
                                         </p>
                                     </div>
 
                                     <div class="col-md-6">
                                         <p class="about-description">
-                                            Sea id dico laudem indoctum. Ei
-                                            his quodsi luptatum persecuti. Ut altera propriae elaboraret sit,
-                                            an laudem legendos sea, ne mea accusata constituam
+                                            {{ $item->coldesquerda }}
                                         </p>
                                     </div>
                                 </div>
+                                @endforeach
                                 <p class="calculator-hr"></p>
                                 <ul class="social-nav-about">
                                     <li class="social-nav-about-item">

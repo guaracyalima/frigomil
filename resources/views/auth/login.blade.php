@@ -10,9 +10,9 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- ===== CSS =====-->
     <!-- General-->
-    <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/theme.css" class="style-theme">
+    <link rel="stylesheet" href="{{ asset('admin/css/basic.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/general.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/theme.css') }}" class="style-theme">
     
     <!--[if lt IE 9]>
     <script src="js/basic/respond.min.js"></script>
@@ -65,14 +65,14 @@
               <div class="l-col-sm-6"><a href="#" class="btn btn-facebook btn-block"><i class="fa fa-facebook"></i>Conectar com o Facebook</a></div>
               <div class="l-col-sm-6"><a href="#" class="btn btn-twitter btn-block"><i class="fa fa-twitter"></i>Conectar com o Twitter</a></div>
             </div>
-            <div class="login-options"><a href="{{ route('password.request') }}" class="fl">Esqueceu sua senha?</a><a href="page-register.html" class="fr">Cadastre-se</a></div>
+            <div class="login-options"><a href="{{ route('password.request') }}" class="fl">Esqueceu sua senha?</a><a href="{{ route('register') }}" class="fr">Cadastre-se</a></div>
           </form>
         </div>
       </div>
     </section>
     <!-- ===== JS =====-->
     <!-- jQuery-->
-    <script src="js/basic/jquery.min.js"></script>
+    <script src="{{ asset('admin/js/basic/jquery.min.js') }}"></script>
     <script src="js/basic/jquery-migrate.min.js"></script>
     <!-- General-->
     <script src="js/basic/modernizr.min.js"></script>

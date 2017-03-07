@@ -33,7 +33,7 @@
           <!--Logo-->
           <h1 class="login-logo"><img src="img/logo.png" alt="Proteus"></h1>
           <!--Login Form-->
-          <form id="registerForm" role="form" action="index.html" class="login-form">
+          <form id="registerForm" role="form" action="{{ route('register') }}" method="POST" class="login-form">
 
             {{ csrf_field() }}
 
@@ -66,13 +66,12 @@
 
             </div>
             <div class="form-group">
-              <input id="password-confirm" type="password" name="password-confirm" placeholder="Repeat password" class="form-control">
+              <input id="password-confirm" type="password" name="password_confirmation" placeholder="Repeat password" class="form-control">
             </div>
-            <div class="checkbox">
-              <input id="registerTerms" type="checkbox" name="registerTerms" class="checkradios checkradiosDark-1">By signing up you are accepting out
-              <a href="#">Terms and Conditions</a>
-            </div>
+
+
             <button type="submit" class="btn btn-dark btn-block btn-login">Cadastrar</button>
+
             <div class="login-social">
               <div class="l-span-md-12">
                 <div class="or"><span>- Ou -</span></div>

@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="{{ asset('img/logo.png') }}" alt="" class="navbar-brand">
+            <img src="{{ asset('img/logo.png') }}" alt="" class="navbar-brand img-logo" >
             {{--<a class="navbar-brand" href="#">Start Bootstrap</a>--}}
         </div>
         <div class="collapse navbar-collapse navbar-right" id="frigomil-navabar">

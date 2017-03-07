@@ -11,6 +11,29 @@
 @endsection
 @section('js')
     <script>
+        //calculadora de churrasco
+        function calculaChurrasco(){
+            // zerando total
+            document.getElementById("valor").value = '0';
+
+            // valor líquido
+            var gramas = 400;
+
+            //pega a quantidade
+            var quantidade = document.getElementById("calculator-input").value;
+
+            var valorReal = quantidade * gramas;
+
+            console.log("Quantidade e valorUnitario "+valorReal);
+
+            var TOTAL = valorReal;
+
+            var kg = TOTAL / 100;
+
+            console.log("O valor é " + TOTAL);
+            document.getElementById("valor").value = kg.toFixed(2);
+            document.getElementById("convidadsos").value = quantidade;
+        }
 
         $('.carousel').carousel({
             interval: 5000 //changes the speed

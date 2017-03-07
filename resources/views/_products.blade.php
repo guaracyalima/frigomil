@@ -12,64 +12,31 @@
                 </div>
 
                 <div class="owl-carousel owl-theme">
+                    @foreach($produtos as $produto)
                     <div class="item">
+
                         <div class="product-box">
-                            <img src="{{ asset('img/products/1.jpg') }}" alt="" class="img-responsive products-img">
+                            <img src="{{ asset('img/products/0.jpg') }}" alt="{{$produto->descricao}}" class="img-responsive products-img">
                             <div class="text-and-price-box">
-                                <p class="product-name">Titulo do produto</p>
-                                <p class="product-size">Peso: <strong>5kg</strong></p>
-                                <p class="product-supplier">Fornecedor <strong>Frigomil</strong></p>
+
+                                <p class="product-name">{{ $produto->nome }}</p>
+                                <p class="product-size">Peso: <strong>{{ $produto->peso }}</strong></p>
+                                <p class="product-supplier">Fornecedor <strong>{{$produto->fornecedor}}</strong></p>
                             </div>
                         </div>
 
                         <div class="product-box">
-                            <img src="{{ asset('img/products/1.jpg') }}" alt="" class="img-responsive products-img">
+                            <img src="{{ asset('img/products/0.jpg') }}" alt="" class="img-responsive products-img">
                             <div class="text-and-price-box">
-                                <p class="product-name">Titulo do produto</p>
-                                <p class="product-size">Peso: <strong>5kg</strong></p>
-                                <p class="product-supplier">Fornecedor <strong>Frigomil</strong></p>
+                                <p class="product-name">{{ $produto->nome }}</p>
+                                <p class="product-size">Peso: <strong>{{ $produto->peso }}</strong></p>
+                                <p class="product-supplier">Fornecedor <strong>{{$produto->fornecedor}}</strong></p>
                             </div>
                         </div>
 
                     </div>
-                    <div class="item">
-                        <div class="product-box">
-                            <img src="{{ asset('img/products/1.jpg') }}" alt="" class="img-responsive products-img">
-                            <div class="text-and-price-box">
-                                <p class="product-name">Titulo do produto</p>
-                                <p class="product-size">Peso: <strong>5kg</strong></p>
-                                <p class="product-supplier">Fornecedor <strong>Frigomil</strong></p>
-                            </div>
-                        </div>
+                    @endforeach
 
-                        <div class="product-box">
-                            <img src="{{ asset('img/products/1.jpg') }}" alt="" class="img-responsive products-img">
-                            <div class="text-and-price-box">
-                                <p class="product-name">Titulo do produto</p>
-                                <p class="product-size">Peso: <strong>5kg</strong></p>
-                                <p class="product-supplier">Fornecedor <strong>Frigomil</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="product-box">
-                            <img src="{{ asset('img/products/1.jpg') }}" alt="" class="img-responsive products-img">
-                            <div class="text-and-price-box">
-                                <p class="product-name">Titulo do produto</p>
-                                <p class="product-size">Peso: <strong>5kg</strong></p>
-                                <p class="product-supplier">Fornecedor <strong>Frigomil</strong></p>
-                            </div>
-                        </div>
-
-                        <div class="product-box">
-                            <img src="{{ asset('img/products/1.jpg') }}" alt="" class="img-responsive products-img">
-                            <div class="text-and-price-box">
-                                <p class="product-name">Titulo do produto</p>
-                                <p class="product-size">Peso: <strong>5kg</strong></p>
-                                <p class="product-supplier">Fornecedor <strong>Frigomil</strong></p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

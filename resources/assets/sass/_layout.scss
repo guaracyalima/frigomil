@@ -51,3 +51,19 @@ footer {
 }
 
 //navbar
+
+.navbar, .navbar-inverse, .navbar-fixed-top .shrink{
+  height: 4em;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  padding-top: 0.5em;
+}
+
+//.navbar-brand {
+//  float: left;
+//  padding: 0px 0px;
+//  font-size: 18px;
+//  line-height: 22px;
+//  height: 50px;
+//}

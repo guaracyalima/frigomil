@@ -9,8 +9,11 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <p class="contact-description">
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor
-                            sit amet consectetur, adipisci velit, sed quia non numquam.
+                           @foreach($contato as $contatos)
+                               <aside class="contact-number">{{$contatos->fone}}</aside>
+
+                               <aside class="contact-endereco">{{$contatos->endereco}}</aside>
+                               @endforeach
                         </p>
                     </div>
                     <div class="col-md-4"></div>
