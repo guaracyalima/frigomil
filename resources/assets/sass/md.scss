@@ -33,6 +33,11 @@
     margin-left: -2em;
     top: 1.5em;
   }
+
+  #button-calculator{
+    position: relative;
+    margin-right: 1em;
+  }
 }
 
 @media only screen and (max-width: 40em) and (orientation: landscape){
@@ -41,5 +46,14 @@
   .active {
     height: 100%;
     padding-top: 0%;
+  }
+}
+
+@media only screen and (min-width: 46em){
+  //se quebrar o responsivo é aqui
+  .form-control{
+    width: 448px;
+    margin-left: -10em;
+    height: 56px;
   }
 }
