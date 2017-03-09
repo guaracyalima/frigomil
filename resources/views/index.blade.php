@@ -28,7 +28,8 @@
 
             var TOTAL = valorReal;
 
-            var kg = TOTAL / 100;
+            var kg = TOTAL;
+           // var kg = TOTAL / 100;
 
             console.log("O valor é " + TOTAL);
             document.getElementById("valor").value = kg.toFixed();
