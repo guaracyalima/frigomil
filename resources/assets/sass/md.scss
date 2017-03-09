@@ -130,7 +130,7 @@
     }
 
     .calculator-hr {
-      width: 86%;
+      //width: 86%;
       box-sizing: border-box;
       height: 1px;
       opacity: 0.1;
@@ -189,7 +189,12 @@
       border: none;
     }
 
-    #total{
-      margin-left: 8em;
-    }
+//    .calculator-description, #total{
+//       margin-left: 8em;
+//     }
+
+// .calculator-hr, #linha{
+//     margin-left: 11.3em;
+// }
+
   }

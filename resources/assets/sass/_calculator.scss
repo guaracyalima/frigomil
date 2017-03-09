@@ -48,13 +48,32 @@ a, a:link, a:hover{
   margin-left: 2em;
 }
 
+.calculator-button a:visited, a:active, a:hover{
+  font-family: "Source Sans Pro";
+font-size: 22px;
+font-weight: 600;
+text-align: center;
+line-height: 28px;
+color: #FFFFFF;
+background-color: rgba(192,0,0,0.2);
+opacity:1;
+}
+
+a:active{
+   font-family: "Source Sans Pro";
+font-size: 22px;
+font-weight: 600;
+text-align: center;
+line-height: 28px;
+color: #FFFFFF;
+background-color: rgba(192,0,0,0.2);
+opacity:1;
+}
+
 #calculator-input{
   width: 89px;
   height: 99px;
   background-color: rgba(192,0,0,0.2);
-
-  //fonte
-
   font-family: $fonte-padaro;
   font-size: 64px;
   font-weight: 300;
@@ -62,6 +81,7 @@ a, a:link, a:hover{
   line-height: 87px;
   color: rgba(0,0,0,0.5);
 }
+
 #calculator-input::placeholder{
   color: #000000;
   opacity: 100;
@@ -149,9 +169,10 @@ a, a:link, a:hover{
 #total{
   font-family: $fonte-padaro;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 33px;
   color: #000000;
+  opacity: 0.8;
 }
 
 #linha{
@@ -159,7 +180,7 @@ a, a:link, a:hover{
   height: 1px;
   opacity: 0.1;
   background: #000;
-  margin-left: 1.3em;
+  //margin-left: 1.3em;
 }
 
 #produtcts-selected{
@@ -172,5 +193,9 @@ a, a:link, a:hover{
 }
 
 #valor{
-      width: 39px;
+  width: 39px;
+  font-family: $fonte-padaro;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
 }

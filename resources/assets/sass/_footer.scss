@@ -2,6 +2,12 @@ footer{
   background: #fff;
 }
 
+.footer-hr{
+  box-sizing: border-box;
+    height: 1px;
+    opacity: 0.1;
+    background: #000;
+}
 #footer-enterprise-idenfier{
   font-family: "San Francisco";
   font-weight: 700;
@@ -66,7 +72,7 @@ footer{
   text-transform: lowercase;
 }
 
-#phone{
+#phone-contact{
   font-family: "Open Sans";
 font-size: 15px;
 line-height: 17px;

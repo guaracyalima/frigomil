@@ -5,10 +5,6 @@
  height: auto;
 }
 
-//.contact-container{
-//  padding-top: 10em;
-//  padding-bottom: 5em;
-//}
 
 .contact-title{
   font-family: $fonte-padaro;
@@ -19,16 +15,6 @@
   text-align: center;
   padding-top: 2em;
 }
-
-// .contact-description{
-//   font-family: 'Open Sans', sans-serif;
-//   font-size: 16px;
-//   text-align: center;
-//   line-height: 22px;
-//   color: #FFFFFF;
-//   padding-top: 1em;
-//   //padding-bottom: 3em;
-// }
 
 .contact-button{
   background: transparent;
@@ -120,4 +106,45 @@
   line-height: 22px;
   color: #FFFFFF;
   padding-top: 1em;
+}
+
+
+//MAPS
+#map {
+  height: 357px;
+  position: relative;
+  width: 100%;
+}
+
+.maps-frame {
+  height: 430px;
+  width: 100%;
+}
+
+.kd-tabbed-vert.header-links .kd-tabbutton a {
+  color: #757575;
+  display: inline-block;
+  height: 100%;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.kd-tabbed-vert.header-links .kd-tabbutton {
+  padding: 0;
+}
+
+.kd-tabbed-vert.header-links .kd-tabbutton.selected a {
+  color: #03a9f4;
+}
+
+.kd-tabbed-vert.header-links .kd-tabbutton a:focus {
+  text-decoration: none;
+}
+
+p.top-desc {
+  padding: 1em 1em .1em 1em;
+}
+
+p.bottom-desc {
+  padding: 0em 1em 1em 1em;
 }
