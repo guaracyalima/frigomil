@@ -1,4 +1,6 @@
-
+body{
+	background-color: #fff;
+}
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
@@ -27,6 +29,3 @@
 @import "navbar";
 @import "md";
 
-body{
-	background-color: #fff;
-}
