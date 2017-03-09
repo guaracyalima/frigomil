@@ -1,5 +1,9 @@
+footer{
+  background: #fff;
+}
+
 #footer-enterprise-idenfier{
-font-family: "San Francisco";
+  font-family: "San Francisco";
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
@@ -36,4 +40,35 @@ font-family: "San Francisco";
   //margin-left: 9em;
   //margin-right: 9em;
   //margin-bottom: 2em;
+}
+
+#principalfooter{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: $fonte-padaro;
+  font-size: 18px;
+}
+
+#footer-enterprise-show{
+  font-family: $fonte-padaro;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #666666;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+#endereco{
+  //text-align: center;
+  font-family: $fonte-padaro;
+  font-size: 15px;
+  text-transform: lowercase;
+}
+
+#phone{
+  font-family: "Open Sans";
+font-size: 15px;
+line-height: 17px;
+color: #666666;
 }

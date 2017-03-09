@@ -1,6 +1,9 @@
 
 @media only screen and (max-width: 40em) {
 
+  .container{
+    padding-top: 1.5em;
+  }
   .carousel,
   .item,
   .active {
@@ -38,6 +41,10 @@
     position: relative;
     margin-right: 1em;
   }
+
+  .footer-address{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 40em) and (orientation: landscape){
@@ -47,6 +54,8 @@
     height: 100%;
     padding-top: 0%;
   }
+
+
 }
 
 @media only screen and (min-width: 46em){
@@ -56,4 +65,71 @@
     margin-left: -10em;
     height: 56px;
   }
+
+  .container{
+    padding-top: 1.5em;
+  }
 }
+
+
+@media only screen and (min-width: 48em){
+  //se quebrar o responsivo é aqui
+  .navbar-brand{
+      //margin-left: -5em;
+      margin-left: -84px;
+    }
+
+    .img-logo{
+      margin-left: -80px;
+    }
+
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+      margin-left: -98px;
+    }
+
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+      margin-right: -3em;
+    }
+
+    .carousel-indicators {
+      bottom: 113px;
+    }
+
+    .material-icons{
+      font-size: 48px;
+    }
+
+    .material-icons:hover{
+      zoom: 2;
+    }
+
+    .material-icons a:active{
+      background: none;
+    }
+
+
+    // .calculator-hr {
+    //   width: 76%;
+    //   box-sizing: border-box;
+    //   height: 1px;
+    //   opacity: 0.1;
+    //   border: 1px solid #000000;
+    //   background: #000;
+    //   /* padding-left: 91em; */
+    //   margin-left: 8.6em;
+    //   /* margin-right: 59.6em; */
+    // }
+
+    .calculator-hr {
+    width: 86%;
+    box-sizing: border-box;
+    height: 1px;
+    opacity: 0.1;
+    /* border: 1px solid #000000; */
+    background: #000;
+    /* padding-left: 91em; */
+    margin-left: 1.3em;
+    /* margin-right: 59.6em; */
+}
+  }

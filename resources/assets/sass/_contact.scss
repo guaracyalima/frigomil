@@ -1,8 +1,8 @@
 
 .image-bg-fixed-height {
  // background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
-  background-color: #C00000;
-  height: auto;
+ background-color: #C00000;
+ height: auto;
 }
 
 //.contact-container{
@@ -17,17 +17,18 @@
   line-height: 64px;
   color: #FFFFFF;
   text-align: center;
+  padding-top: 2em;
 }
 
-.contact-description{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  line-height: 22px;
-  color: #FFFFFF;
-  padding-top: 1em;
-  //padding-bottom: 3em;
-}
+// .contact-description{
+//   font-family: 'Open Sans', sans-serif;
+//   font-size: 16px;
+//   text-align: center;
+//   line-height: 22px;
+//   color: #FFFFFF;
+//   padding-top: 1em;
+//   //padding-bottom: 3em;
+// }
 
 .contact-button{
   background: transparent;
@@ -46,11 +47,22 @@
   float: right;
   height: 42px;
   border: 1px solid #FFFFFF;
+
 }
 
-//.contact-map, .contact-form-item{
-//  height: 448px;
-//}
+.contact-button:hover, #menu-button-churasco-calculator:hover{
+  background: #fff;
+  font-family: $fonte-padaro;
+  color: #C00000;
+  font-weight: 700;
+}
+
+#got-to-top{
+  font-size: 30px;
+  padding-bottom: 2em;
+  color: #000;
+  opacity: 0.5;
+}
 
 #back-to-top a, a:hover{
   background: none;
@@ -97,6 +109,7 @@
   line-height: 22px;
   color: #FFFFFF;
   padding-top: 1em;
+  padding-bottom: 2em;
 }
 
 

@@ -1,16 +1,16 @@
 @extends('layouts.front')
 @section('conteudo')
 
-    @include('_header')
-    @include('_products')
-    @include('_about')
-    @include('_contact')
-    @include('_calculator')
-    @include('_footer')
+@include('_header')
+@include('_products')
+@include('_about')
+@include('_contact')
+@include('_calculator')
+@include('_footer')
 
 @endsection
 @section('js')
-    <script>
+<script>
         //calculadora de churrasco
         function calculaChurrasco(){
             // zerando total
@@ -35,6 +35,14 @@
             document.getElementById("convidadsos").value = quantidade;
         }
 
+        $(function(){
+            $(".btn-toggle").click(function(e){
+                e.preventDefault();
+                el = $(this).data('element');
+                $(el).toggle();
+            });
+        });
+
         $('.carousel').carousel({
             interval: 5000 //changes the speed
         })
@@ -54,14 +62,14 @@
                     nav:false
                 },
                 1000:{
-                    items:3,
+                    items:4,
                     nav:true,
                     loop:true
                 }
             },
             nav: true,
             navText: ["<img src='http://toyopecaseservicos.com.br/img/icons/ic_arrow_back_white_18px.svg' style='height: 3em;'>",
-                "<img src='http://toyopecaseservicos.com.br/img/icons/ic_arrow_forward_white_18px.svg' style='height: 3em;'>"]
+            "<img src='http://toyopecaseservicos.com.br/img/icons/ic_arrow_forward_white_18px.svg' style='height: 3em;'>"]
         });
 
         $(window).scroll(function() {
@@ -83,5 +91,60 @@
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkaavuqu-R_ycB5Y8m86FHcLSnZavbx3k&callback=initMap"
-            async defer></script>
-    @endsection
+    async defer></script>
+
+
+
+    <script type="text/javascript">
+        //anima a rolagem da pagina
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+              }, 1000);
+                return false;
+            }
+        }
+        });
+      });
+   </script>
+
+<script type="text/javascript">
+//toogle
+$(document).ready(function(){
+
+$(".filter-button").on('click',function(){
+var value = $(this).attr('data-filter');
+
+if(value == "all")
+{
+$('.filter').removeClass('hidden');
+$('.filter').show('1000');
+$('.filter-button').removeClass('ativado');
+}
+else
+{
+
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+$(".filter").not('.'+value).hide('3000');
+$('.filter').filter('.'+value).show('3000');
+$('.filter-button').addClass('ativado');
+
+}
+});
+
+});
+
+$(document).ready(function(){
+$('.filter-button').click(function(){
+$(this).addClass('ativado');
+});
+});
+
+</script>
+        @endsection

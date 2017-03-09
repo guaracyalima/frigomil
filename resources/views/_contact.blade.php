@@ -1,4 +1,4 @@
-<aside class="image-bg-fixed-height">
+<aside class="image-bg-fixed-height" id="contact">
 
     <div class="contact" id="contact">
         <div class="contact-container">

@@ -1,4 +1,4 @@
-<section>
+<section id="calculator">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -6,7 +6,7 @@
                     Calculadora de Churrasco
                 </p>
                 <p id="calculator-subtitle" class="text-center">
-                    Saiba quanto precisa investir
+                    Saiba a quantidade de carne a ser consumida
                 </p>
                 <p class="calculator-description">
                     Quais são as carnes que você deseja
@@ -38,6 +38,21 @@
 
                 </div>
                 {{--<p class="calculator-hr"></p>--}}
+
+                <div class="row claculadora2" id="claculadora2">
+                    <p>Churrasco de : Name & Name</p>
+                    <div class="col-md-6">
+                        <i class="material-icons">person</i>
+                        <input type="text" id="convidadsos" placeholder="0">
+                        <p id="convidados">Convidados</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="linha"></p>
+                        <p id="total">Total</p>
+                        <p id="valor-total">R$ <input type="text" id="valor"></p>
+                    </div>
+                </div>
+
                 <div class="row claculadora1">
                     <div class="calculator-define">
                         <div class="col-md-3">
@@ -49,28 +64,11 @@
                         </div>
 
                         <div class="com-md-3">
-                            <button href="" class="btn" id="button-calculator" onclick="calculaChurrasco()">Calcular</button>
+                            <button href="" class="btn btn-toggle" data-element="#claculadora2" id="button-calculator" onclick="calculaChurrasco()">Calcular</button>
                         </div>
                     </div>
                 </div>
 
-                {{--<div class="row claculadora2">--}}
-                    {{--<p>Churrasco de : Name & Name</p>--}}
-                    {{--<div class="col-md-6">--}}
-                        {{--<i class="material-icons">person</i>--}}
-                        {{--<input type="text" id="convidadsos" placeholder="0">--}}
-                        {{--<p id="convidados">Convidados</p>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-6">--}}
-                        {{--<p id="linha"></p>--}}
-                        {{--<p id="total">Total</p>--}}
-                        {{--<p id="valor-total">R$ <input type="text" id="valor"></p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                <p id="back-to-top" class="text-center">
-                    <a href="#"><i class="material-icons">expand_less</i></a>
-                </p>
             </div>
         </div>
         <!-- /.row -->

@@ -2,14 +2,17 @@
 //  width: 259px;
 //  height: 73px;
 //}
-
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  font-family: $fonte-padaro;
+}
 .navbar-inverse{
   background-color: #A30202;
   border-color: #A30202;
+  height: 98px;
 }
 
 #menu-button-churasco-calculator{
-  font-size: 14px;
+  font-size: 17px;
   line-height: 12px;
   color: #FFFFFF;
 
@@ -20,6 +23,11 @@
 
 a:link, a:visited, a:hover{
   text-decoration: none
+  
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+  opacity: 0.8;
 }
 
 a:active{
@@ -28,8 +36,8 @@ a:active{
 
   //font
   font-family: "Source Sans Pro";
-  font-size: 22px;
-  font-weight: 600;
+  // font-size: 22px;
+  // font-weight: 600;
   text-align: center;
   line-height: 28px;
   color: #FFFFFF;
@@ -37,7 +45,7 @@ a:active{
 
 .navbar-inverse .navbar-nav > li > a  {
   color: #fff;
-
+  font-size: 17px;
 }
 .navbar-inverse .navbar-brand{
   color: #fff;
