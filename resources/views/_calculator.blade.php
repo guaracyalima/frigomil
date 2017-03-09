@@ -37,19 +37,27 @@
                     </p>
 
                 </div>
-                {{--<p class="calculator-hr"></p>--}}
+                <p class="calculator-hr"></p>
 
-                <div class="row claculadora2" id="claculadora2">
-                    <p>Churrasco de : Name & Name</p>
-                    <div class="col-md-6">
-                        <i class="material-icons">person</i>
-                        <input type="text" id="convidadsos" placeholder="0">
-                        <p id="convidados">Convidados</p>
+                <div class="row claculadora2" id="claculadora2" style="display:none;">
+                    <p id="produtcts-selected">Churrasco de : Name & Name</p>
+                    <div class="row">
+                    <div class="col-md-6 resultado col-md-offset-4">
+
+                        <i class="fa fa-user" aria-hidden="true" id="convidados-icon"></i>
+                        <input type="text" id="calculator-input-participants-number" placeholder="0"><i id="convidados">Convidados</i>
                     </div>
-                    <div class="col-md-6">
+                    </div>
+                    <div class="row">
+                    <div id="center-isto">
+                        <div class="col-md-10">
                         <p id="linha"></p>
-                        <p id="total">Total</p>
-                        <p id="valor-total">R$ <input type="text" id="valor"></p>
+                        <div class="row">
+                            <p id="total">Total</p>
+                        <p id="valor-total"><input type="text" id="valor">kg</p>
+                        </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
 
@@ -63,8 +71,8 @@
                             <p id="calculator-input-participants-number">Convidados</p>
                         </div>
 
-                        <div class="com-md-3">
-                            <button href="" class="btn btn-toggle" data-element="#claculadora2" id="button-calculator" onclick="calculaChurrasco()">Calcular</button>
+                        <div class="com-md-3 bt-calculator">
+                            <button href="" class="btn btn-trugee" data-element="#claculadora2" id="button-calculator" onclick="calculaChurrasco()">Calcular</button>
                         </div>
                     </div>
                 </div>

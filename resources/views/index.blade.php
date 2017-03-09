@@ -31,22 +31,25 @@
             var kg = TOTAL / 100;
 
             console.log("O valor é " + TOTAL);
-            document.getElementById("valor").value = kg.toFixed(2);
-            document.getElementById("convidadsos").value = quantidade;
+            document.getElementById("valor").value = kg.toFixed();
+            document.getElementById("calculator-input-participants-number").value = quantidade;
         }
 
+        //toogle dos produtos
         $(function(){
-            $(".btn-toggle").click(function(e){
+            $(".btn-trugee").click(function(e){
                 e.preventDefault();
                 el = $(this).data('element');
                 $(el).toggle();
             });
         });
 
+        //duração dos slides
         $('.carousel').carousel({
             interval: 5000 //changes the speed
         })
 
+        //slide  de produtos
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             loop:true,
@@ -129,8 +132,6 @@ $('.filter-button').removeClass('ativado');
 else
 {
 
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
 $(".filter").not('.'+value).hide('3000');
 $('.filter').filter('.'+value).show('3000');
 $('.filter-button').addClass('ativado');

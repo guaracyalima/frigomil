@@ -77,6 +77,9 @@ a, a:link, a:hover{
   font-style: italic;
   //line-height: 87px;
   color: #000000;
+  width: 89px;
+  height: 99px;
+  border:none;
 }
 
 #button-calculator{
@@ -92,6 +95,13 @@ a, a:link, a:hover{
   line-height: 24px;
   color: #FFFFFF;
   float: right;
+}
+
+
+#convidados-icon{
+  font-size: 64px;
+  line-height: 64px;
+  color: #C00000;
 }
 
 .calculator-hr{
@@ -125,4 +135,42 @@ a, a:link, a:hover{
 
 .claculadora2{
   //display: none;
+}
+
+#convidados{
+  font-family:  $fonte-padaro;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 49px;
+  color: #000000;
+}
+
+#total{
+  font-family: $fonte-padaro;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  color: #000000;
+}
+
+#linha{
+  box-sizing: border-box;
+  height: 1px;
+  opacity: 0.1;
+  background: #000;
+  margin-left: 1.3em;
+}
+
+#produtcts-selected{
+  font-family: "Source Sans Pro" sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 52px;
+  color: #000000;
+}
+
+#valor{
+      width: 39px;
 }

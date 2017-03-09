@@ -45,6 +45,27 @@
   .footer-address{
     text-align: center;
   }
+
+  #total, #valor{
+    margin-left: 2em;
+  }
+
+  #valor{
+   font-family: "Source Sans Pro", sans-serif;
+   font-size: 30px;
+   font-weight: 300;
+   font-style: italic;
+   color: #000000;
+
+   border: none;
+ }
+
+ #convidados-icon {
+  font-size: 64px;
+  line-height: 64px;
+  color: #C00000;
+  margin-left: 1em;
+}
 }
 
 @media only screen and (max-width: 40em) and (orientation: landscape){
@@ -108,28 +129,67 @@
       background: none;
     }
 
-
-    // .calculator-hr {
-    //   width: 76%;
-    //   box-sizing: border-box;
-    //   height: 1px;
-    //   opacity: 0.1;
-    //   border: 1px solid #000000;
-    //   background: #000;
-    //   /* padding-left: 91em; */
-    //   margin-left: 8.6em;
-    //   /* margin-right: 59.6em; */
-    // }
-
     .calculator-hr {
-    width: 86%;
-    box-sizing: border-box;
-    height: 1px;
-    opacity: 0.1;
-    /* border: 1px solid #000000; */
-    background: #000;
-    /* padding-left: 91em; */
-    margin-left: 1.3em;
-    /* margin-right: 59.6em; */
-}
+      width: 86%;
+      box-sizing: border-box;
+      height: 1px;
+      opacity: 0.1;
+      background: #000;
+      margin-left: 1.3em;
+    }
+
+    #calculator-input{
+      float: right;
+    }
+
+    .bt-calculator{
+      padding-top: 8em;
+    }
+
+    .calculator-define{
+      padding-top: 4em;
+    }
+
+    #button-calculator {
+      width: 263px;
+      height: 56px;
+      background-color: #C00000;
+      border-radius: 3px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 24px;
+      color: #FFFFFF;
+      /* float: left; */
+      margin-left: 721px;
+    }
+
+    .calculator-description{
+      margin-left: 1.5em;
+      padding-top: 2em;
+    }
+
+    .resultado{
+      margin-left: 13em;
+    }
+
+    #valor-total{
+      float: right;
+      margin-top: -3em;
+    }
+
+    #valor{
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      font-style: italic;
+      color: #000000;
+
+      border: none;
+    }
+
+    #total{
+      margin-left: 8em;
+    }
   }
