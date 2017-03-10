@@ -10,7 +10,7 @@
                  <p id="principalfooter"> <span id="footer-enterprise-show">Frigomil</span> | Pimenta bueno/RO</p>
                  <p id="endereco">
                     @foreach($contatos as $contato)
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>{{ $contato->endereco }}
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>  {{ $contato->endereco }}
                     @endforeach
                 </p>
 

@@ -16,17 +16,17 @@
                     <div id="section-buttons-calculator">
                         <div class="col-md-12 col-sm-12 col-lg-12">
                             <p class="calculator-hr"></p>
-                            <a class="calculator-button">Picanha</a>
-                            <a class="calculator-button">Contra-filé</a>
-                            <a class="calculator-button">Alcatra</a>
-                            <a class="calculator-button">Maminha</a>
-                            <a class="calculator-button">Filé-mignon</a>
+                            <button class="calculator-button">Picanha</button>
+                            <button class="calculator-button">Contra-filé</button>
+                            <button class="calculator-button">Alcatra</button>
+                            <button class="calculator-button">Maminha</button>
+                            <button class="calculator-button">Filé-mignon</button>
                         </div>
 
                         <div class="col-sm-8 col-lg-8 col-md-8 col-md-offset-2">
-                            <a class="calculator-button">Bananinha</a>
-                            <a class="calculator-button">Costela</a>
-                            <a class="calculator-button">Cupim</a>
+                            <button class="calculator-button">Bananinha</button>
+                            <button class="calculator-button">Costela</button>
+                            <button class="calculator-button">Cupim</button>
                         </div>
                     </div>
 

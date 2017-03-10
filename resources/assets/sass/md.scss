@@ -105,7 +105,7 @@
     }
 
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
-      margin-left: -98px;
+      margin-left: -8px;
     }
 
 
@@ -188,13 +188,11 @@
 
       border: none;
     }
-
-//    .calculator-description, #total{
-//       margin-left: 8em;
-//     }
-
-// .calculator-hr, #linha{
-//     margin-left: 11.3em;
-// }
+  #map {
+    height: 357px;
+    position: relative;
+    width: 448px;
+    float: right;
+  }
 
   }

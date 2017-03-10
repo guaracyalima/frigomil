@@ -60,12 +60,10 @@ footer{
 }
 
 #endereco{
-  //text-align: center;
   font-family: $fonte-padaro;
   font-size: 15px;
-
+  text-transform: capitalize;
 }
-
 
 #mail{
   font-family: $fonte-padaro;
@@ -73,7 +71,7 @@ footer{
 }
 
 #phone-contact{
-  font-family: "Open Sans";
+  font-family: $fonte-padaro;
 font-size: 15px;
 line-height: 17px;
 color: #666666;
