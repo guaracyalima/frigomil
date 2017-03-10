@@ -39,7 +39,7 @@
 
                     <div class="contact-form-item">
                         <div class="form">
-                            {{ Form::open(array('action' => 'FrontController@contato', 'class' => 'col-sm-7 col-md-7 col-xs-12 col-md-offset-3','role' => 'form')) }}
+                            {{ Form::open(array('action' => 'FrontController@contato', 'class' => 'col-sm-12 col-md-12 col-xs-12','role' => 'form')) }}
                             <form role="form" class=" col-sm-7 col-md-7 col-xs-12 col-md-offset-3">
 
                                 <div class="form-group">
