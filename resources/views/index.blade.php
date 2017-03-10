@@ -119,11 +119,20 @@
 
 <script type="text/javascript">
 
-    $(function() {                       //run when the DOM is ready
-        $(".calculator-button").click(function() {  //use a class, since your ID gets mangled
-            $(this).addClass("ativadaodoido");      //add the class to the clicked element
+    $(function() {
+        $(".calculator-button").click(function() {
+            $(this).addClass("ativadaodoido");
         });
     });
+
+//    $(function() {
+//        $(".rectangle").on('click',function() {
+//            $(this).addClass("ativadaodoido");
+//        });
+//        $(".rectangle").on('mouseleave',function() {
+//            $(this).addClass("rectangle");
+//        });
+//    });
 //toogle
 $(document).ready(function(){
 
