@@ -27,9 +27,6 @@ footer{
   padding-top: 1em;
 }
 
-//.social-nav{
-//  margin-left: 8em;
-//}
 
 .social-nav li{
   display: inline;
@@ -43,9 +40,6 @@ footer{
   height: 2px;
   opacity: 0.1;
   border: 1px solid #000000;
-  //margin-left: 9em;
-  //margin-right: 9em;
-  //margin-bottom: 2em;
 }
 
 #principalfooter{
@@ -69,7 +63,13 @@ footer{
   //text-align: center;
   font-family: $fonte-padaro;
   font-size: 15px;
-  text-transform: lowercase;
+
+}
+
+
+#mail{
+  font-family: $fonte-padaro;
+  font-size: 15px;
 }
 
 #phone-contact{

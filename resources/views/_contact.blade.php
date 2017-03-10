@@ -9,56 +9,66 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <p class="contact-description">
-                           @foreach($contato as $contatos)
-                               <aside class="contact-number">{{$contatos->fone}}</aside>
+                         @foreach($contatos as $contatos)
+                         <aside class="contact-number">{{$contatos->fone}}</aside>
 
-                               <aside class="contact-endereco">{{$contatos->endereco}}</aside>
-                               @endforeach
-                        </p>
+                         <aside class="contact-endereco">{{$contatos->endereco}}</aside>
+                         @endforeach
+                     </p>
+                 </div>
+                 <div class="col-md-4"></div>
+             </div>
+
+             <div class="row">
+
+                <div class="col-md-6">
+                    <div class="contact-map">
+                        <p id="map"></p>
                     </div>
-                    <div class="col-md-4"></div>
                 </div>
 
-                <div class="row">
+                <div class="col-md-6">
+                    @if(Session::has('message'))
 
-                    <div class="col-md-6">
-                        <div class="contact-map">
-                            <p id="map"></p>
-                        </div>
+                    <div class="alert alert-success">
+                        <strong> {{ Session::get('message') }}</strong> 
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="contact-form-item">
-                            <div class="form">
-                                <form role="form" class=" col-sm-7 col-md-7 col-xs-12 col-md-offset-3">
 
-                                    <div class="form-group">
-                                        <input id="name" name="name" type="text" class="form-control input-contact-form" required placeholder="Seu nome">
-                                    </div>
-                                    <div class="form-group">
-                                        <input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Seu email">
-                                    </div>
+                    @endif
 
-                                    <div class="form-group">
-                                        <input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Assunto">
-                                    </div>
+                    <div class="contact-form-item">
+                        <div class="form">
+                            {{ Form::open(array('action' => 'FrontController@contato', 'class' => 'col-sm-7 col-md-7 col-xs-12 col-md-offset-3','role' => 'form')) }}
+                            <form role="form" class=" col-sm-7 col-md-7 col-xs-12 col-md-offset-3">
 
-                                    <div class="form-group">
-                                        <textarea id="message" name="msg" class="form-control input-contact-form" required placeholder="Mensagem" cols="8" rows="6"></textarea>
-                                    </div>
+                                <div class="form-group">
+                                    <input id="name" name="name" type="text" class="form-control input-contact-form" required placeholder="Seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <input id="email" name="email" type="tel" class="form-control input-contact-form" required placeholder="Seu email">
+                                </div>
 
-                                    <div class="form-group">
-                                        <button class="contact-button">Enviar</button>
-                                    </div>
-                                    <br>
-                                    <br>
-                                </form>
-                            </div>
+                                <div class="form-group">
+                                    <input id="assunto" name="assunto" type="tel" class="form-control input-contact-form" required placeholder="Assunto">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="msg" name="msg" class="form-control input-contact-form" required placeholder="Mensagem" cols="8" rows="6"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="contact-button">Enviar</button>
+                                </div>
+                                <br>
+                                <br>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 </aside>

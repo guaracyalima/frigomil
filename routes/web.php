@@ -16,6 +16,8 @@
 //});
 
 Route::get('/', 'FrontController@index');
+Route::post('contato', 'FrontController@contato');
+
 
 Auth::routes();
 

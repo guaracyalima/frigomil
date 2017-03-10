@@ -8,7 +8,7 @@
                     <button class="rectangle filter-button" data-filter="all">Carnes</button>
                     <button class="rectangle filter-button" data-filter="miudosBrancos">Miudos Brancos</button>
                     <button class="rectangle filter-button " data-filter="miudosVermelhos">Miudos vermelhos</button>
-                    <button class="rectangle filter-button" data-filter="freio recortes">Recortes</button>
+                    <button class="rectangle filter-button" data-filter="recortes">Recortes</button>
                 </div>
 
                 <div class="owl-carousel owl-theme">
@@ -20,12 +20,12 @@
                             <div class="text-and-price-box">
 
                                 <p class="product-name">{{ $produto->nome }}</p>
-                                <p class="product-size">Peso: <strong>{{ $produto->peso }}</strong></p>
+                                <p class="product-size">Peso: <strong>{{ $produto->peso }}</strong>kg</p>
                                 <p class="product-supplier">Fornecedor <strong>{{$produto->fornecedor}}</strong></p>
                             </div>
                         </div>
 
-                        <div class="product-box filter miudosVermelhos">
+                        <div class="product-box filter miudosVermelhos recortes">
                             <img src="{{ asset('img/products/0.jpg') }}" alt="" class="img-responsive products-img">
                             <div class="text-and-price-box">
                                 <p class="product-name">{{ $produto->nome }}</p>

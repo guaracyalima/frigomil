@@ -1,7 +1,7 @@
 
 body {
   margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-  
+  background-color: #fff;  
 }
 
 .image-bg-fluid-height,
@@ -51,7 +51,6 @@ footer {
   }
 }
 
-//navbar
 
 .navbar, .navbar-inverse, .navbar-fixed-top .shrink{
   height: 4em;
@@ -60,11 +59,3 @@ footer {
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
   padding-top: 0.5em;
 }
-
-//.navbar-brand {
-//  float: left;
-//  padding: 0px 0px;
-//  font-size: 18px;
-//  line-height: 22px;
-//  height: 50px;
-//}

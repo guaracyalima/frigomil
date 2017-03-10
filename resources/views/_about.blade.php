@@ -28,22 +28,22 @@
                                     </div>
                                 </div>
                                 @endforeach
-                                <p class="calculator-hr"></p>
-                                <ul class="social-nav-about">
+                                {{-- <p class="calculator-hr"></p> --}}
+                                {{-- <ul class="social-nav-about">
                                     <li class="social-nav-about-item">
                                         <img src="img/icons/003-facebook-logo-button.svg" alt="" class="img-circle ">
-                                        {{--<i class="fa fa-facebook" aria-hidden="true"></i>--}}
+                                    
 
                                     </li>
                                     <li class="social-nav-about-item">
-                                        {{--<i class="fa fa-twitter" aria-hidden="true"></i>--}}
+                                    
                                         <img src="img/icons/002-twitter-logo-button.svg" alt="" class="img-circle ">
                                     </li>
                                     <li class="social-nav-about-item">
-                                        {{--<i class="fa fa-play" aria-hidden="true"></i>--}}
+                                    
                                         <img src="img/icons/arrows.svg" alt="" class="img-circle ">
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </div>
                         </div>
                     </aside>

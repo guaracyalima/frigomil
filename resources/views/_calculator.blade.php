@@ -14,7 +14,8 @@
 
                 <div class="row">
                     <div id="section-buttons-calculator">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <p class="calculator-hr"></p>
                             <a class="calculator-button">Picanha</a>
                             <a class="calculator-button">Contra-filé</a>
                             <a class="calculator-button">Alcatra</a>
@@ -22,10 +23,10 @@
                             <a class="calculator-button">Filé-mignon</a>
                         </div>
 
-                        <div class="col-md-8 col-md-offset-2">
-                            <button class="calculator-button">Bananinha</button>
-                            <button class="calculator-button">Costela</button>
-                            <button class="calculator-button">Cupim</button>
+                        <div class="col-sm-8 col-lg-8 col-md-8 col-md-offset-2">
+                            <a class="calculator-button">Bananinha</a>
+                            <a class="calculator-button">Costela</a>
+                            <a class="calculator-button">Cupim</a>
                         </div>
                     </div>
 
