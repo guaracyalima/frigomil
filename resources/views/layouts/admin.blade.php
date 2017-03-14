@@ -129,6 +129,101 @@
                         </ul>
                     </li>
 
+                    <li><a href="#"><i class="icon fa fa-cogs"></i><span class="title">Menu</span><span class="arrow"><i class="fa fa-angle-left"></i></span></a>
+                        <ul>
+                            <li>
+                                <a href="{{ route('admin.menu.index') }}">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    <span class="title">Menu</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><i class="icon fa fa-sitemap"></i><span class="title">Filiais</span><span class="arrow"><i class="fa fa-angle-left"></i></span></a>
+                        <ul>
+                            <li><a href="{{route('admin.filial.index')}}"><span class="title">Filiais</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><i class="icon fa fa-puzzle-piece"></i><span class="title">Serviços</span><span class="arrow"><i class="fa fa-angle-left"></i></span></a>
+                        <ul>
+                            <li>
+                                <a href="{{route('admin.servicos.index')}}">
+                                    <span class="title">Serviços</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><i class="icon fa fa-users"></i><span class="title">Redes sociais</span><span class="arrow"><i class="fa fa-angle-left"></i></span></a>
+                        <ul>
+                            <li>
+                                <a href="{{route('admin.social.index')}}">
+                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                                    <span class="title">redes</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><i class="icon fa fa-envelope-o"></i><span class="title">E-mail</span><span class="arrow"><i class="fa fa-angle-left"></i></span></a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                                    <span class="title">Emails de exibiçao</span></a>
+                            </li>
+                            <li><a href="#"><span class="title">Emails do sistema</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><i class="icon fa fa-search"></i><span class="title">SEO</span><span class="arrow"><i class="fa fa-angle-left"></i></span></a>
+                        <ul>
+                            <li>
+                                <a href="layout-menu.html">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    <span class="title">SEO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="icon fa fa-phone"></i>
+                            <span class="title">Telefones</span>
+                            <span class="arrow"><i class="fa fa-angle-left"></i></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="{{route('admin.telefone.index')}}">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    <span class="title">Telefones</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="icon fa fa-user-plus"></i>
+                            <span class="title">Clientes</span>
+                            <span class="arrow"><i class="fa fa-angle-left"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="layout-menu.html">
+
+                                    <span class="title">Clientes</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
