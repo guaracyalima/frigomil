@@ -19,7 +19,8 @@ class ContatoController extends Controller
     }
     public function index()
     {
-        return view('admin.contato');
+        $contatos = $this->repository->paginate(10);
+        return view ('admin.contatos.index', compact('contatos'));
     }
 
     public function create(Request $request)

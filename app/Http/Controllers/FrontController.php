@@ -19,8 +19,19 @@ class FrontController extends Controller
 		$sobre = DB::select('SELECT * FROM sobres ORDER BY id DESC LIMIT 1');
 		$contatos = DB::select('SELECT * FROM contatos ORDER BY id DESC LIMIT 1');
 		$topo = DB::select('SELECT * FROM topos ORDER BY id DESC LIMIT 1');
+		$email = DB::select('SELECT * FROM emails ORDER BY id DESC LIMIT 1');
+		$telefone = DB::select('SELECT * FROM telefones ORDER BY id DESC LIMIT 2');
+		$endereco = DB::select('SELECT * FROM enderecos ORDER BY id DESC LIMIT 1');
 
-		return view('index', compact('produtos', 'sobre', 'contatos', 'topo'));
+		return view('index', compact(
+		    'produtos',
+            'sobre',
+            'contatos',
+            'topo',
+            'email',
+            'telefone',
+            'endereco'
+        ));
 
 	}
 

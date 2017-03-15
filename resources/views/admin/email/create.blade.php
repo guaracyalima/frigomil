@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.index')
 
 @section('conteudo')
 
@@ -6,9 +6,9 @@
     <h3>Cadastrar dados de contato</h3>
     @include('errors._check')
 
-    {!! Form::open(['route' => 'admin.contatos.store', 'files' => true, 'class' => '']) !!}
+    {!! Form::open(['route' => 'admin.email.store', 'files' => true, 'class' => '']) !!}
 
-    @include('admin.contatos._form')
+    @include('admin.email._form')
 
     {!! Form::submit('Cadastrar', ['class' => 'btn btn-primary center-block']) !!}
 

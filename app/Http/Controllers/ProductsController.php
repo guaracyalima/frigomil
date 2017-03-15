@@ -22,35 +22,63 @@ class ProductsController extends Controller
 
     public function index()
     {
-        return view('admin.products');
+        $produtos = $this->repository->paginate(10);
+        return view('admin.produtos.index', compact('produtos'));
     }
 
-    public function create(Request $request)
+    public function create()
     {
-        if ($request->hasFile('img')) {
-            $name = $request->file('img')->getClientOriginalName();
-            $ext = $request->file('img')->extension();
-            $path = Storage::putFile('uploads', new File($request->file('img')));
-            $encoding = base64_encode($request->file('img'));
-            Product::create([
-                'nome'  => $request->nome,
-                'descricao' => $request->descricao,
-                'preco' => $request->preco,
-                'peso' => $request->peso,
-                'fornecedor' => $request->fornecedor,
-                'img' => $encoding
-            ]);
-        }
-        else{
-            Product::create([
-                'nome'  => $request->nome,
-                'descricao' => $request->descricao,
-                'preco' => $request->preco,
-                'peso' => $request->peso,
-                'fornecedor' => $request->fornecedor
-            ]);
+//        $data = $request->all();
+//        $this->repository->create($data);
+        return view('admin.produtos.create');
+    }
+
+    public function edit($id)
+    {
+        $products = $this->repository->find($id);
+        return view('admin.produtos.edit', compact('products'));
+    }
+
+    public function store(Request $request)
+    {
+
+        $data = $request->all();
+        $file = $request->file('imagem');
+        //dd($file);
+        if(is_object($file) and $file->isValid()){
+            $filename = time(). '-' . $file->getClientOriginalName();
+            $file = $file->move(public_path().'/img/products/', $filename);
+            $path = $filename;
+            $data['imagem']= $path;
+            //dd($path);
+            $this->repository->create($data);
         }
 
-        return view('admin.products');
+        return redirect()->route('admin.produtos.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+//        $data = $request->all();
+//        $this->repository->update($data, $id);
+
+        $data = $request->all();
+        $file = $request->file('imagem');
+        if(is_object($file) and $file->isValid()){
+            $filename = time(). '-'  .$file->getClientOriginalName();
+            $file = $file->move(public_path().'/img/products/', $filename);
+            $path = $filename;
+            $data['imagem']=$path;
+            $this->repository->update($data, $id);
+        }
+
+        return redirect()->route('admin.produtos.index');
+    }
+
+
+    public function destroy($id)
+    {
+        $this->repository->delete($id);
+        return redirect()->route('admin.produtos.index');
     }
 }

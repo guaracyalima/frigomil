@@ -12,7 +12,8 @@ class Topo extends Model implements Transformable
 
     protected $fillable = [
         'titulo',
-        'descricao'
+        'descricao',
+        'imagem'
     ];
 
 }

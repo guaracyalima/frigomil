@@ -16,9 +16,11 @@ class CreateSobresTable extends Migration
 		Schema::create('sobres', function(Blueprint $table) {
             $table->increments('id');
             $table->string('titulo');
-            $table->string('slogan');
-            $table->longText('coldireita');
-            $table->longText('coldesquerda');
+            $table->longText('slogan');
+            $table->longText('missao');
+            $table->longText('visao');
+            $table->longText('valores');
+            $table->longText('imagem');
             $table->timestamps();
 		});
 	}

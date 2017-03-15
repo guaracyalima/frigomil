@@ -16,7 +16,7 @@
                     <div class="item">
 
                         <div class="product-box filter miudosBrancos">
-                            <img src="{{ asset('img/products/0.jpg') }}" alt="{{$produto->descricao}}" class="img-responsive products-img">
+                            <img src="{{asset("img/products/$produto->imagem")}}" alt="{{$produto->descricao}}" class="img-responsive products-img">
                             <div class="text-and-price-box">
 
                                 <p class="product-name">{{ $produto->nome }}</p>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="product-box filter miudosVermelhos recortes">
-                            <img src="{{ asset('img/products/0.jpg') }}" alt="" class="img-responsive products-img">
+                            <img src="{{asset("img/products/$produto->imagem")}}" alt="{{$produto->descricao}}" class="img-responsive products-img">
                             <div class="text-and-price-box">
                                 <p class="product-name">{{ $produto->nome }}</p>
                                 <p class="product-size">Peso: <strong>{{ $produto->peso }}</strong></p>

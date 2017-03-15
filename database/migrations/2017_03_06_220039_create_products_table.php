@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->double('preco');
             $table->double('peso');
             $table->string('fornecedor');
-            $table->longText('img')->nullable();
+            $table->longText('imagem')->nullable();
             $table->timestamps();
 		});
 	}

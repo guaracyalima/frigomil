@@ -14,12 +14,13 @@
                     @endforeach
                 </p>
 
-
+                    @foreach($email as $email)
                 <p id="mail">
 
-                    <i class="fa fa-envelope" aria-hidden="true"></i> frigomil@frigomil.com.br
+                    <i class="fa fa-envelope" aria-hidden="true"></i> {{ $email->email }}
                     
                 </p>
+                    @endforeach
 
 
                 <p id="phone-contact"> <i class="fa fa-phone" aria-hidden="true"></i> 69 3451-9000  <i class="fa fa-phone" aria-hidden="true"></i> 69 3451-8000</p>

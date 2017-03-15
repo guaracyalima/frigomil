@@ -9,9 +9,12 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <p class="contact-description">
-                         @foreach($contatos as $contatos)
-                         <aside class="contact-number">{{$contatos->fone}}</aside>
+                         @foreach($telefone as $fone)
+                         <aside class="contact-number">{{$fone->fone}}</aside>
 
+                            @endforeach
+
+                             @foreach($endereco as $contatos)
                          <aside class="contact-endereco">{{$contatos->endereco}}</aside>
                          @endforeach
                      </p>

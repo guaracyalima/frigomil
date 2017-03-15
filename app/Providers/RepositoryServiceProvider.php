@@ -72,5 +72,20 @@ class RepositoryServiceProvider extends ServiceProvider
             'App\Repositories\TelefoneRepository',
             'App\Repositories\TelefoneRepositoryEloquent'
         );
+
+        $this->app->bind(
+            'App\Repositories\TopoRepository',
+            'App\Repositories\TopoRepositoryEloquent'
+        );
+
+        $this->app->bind(
+            'App\Repositories\EmailRepository',
+            'App\Repositories\EmailRepositoryEloquent'
+        );
+
+        $this->app->bind(
+            'App\Repositories\EnderecoRepository',
+            'App\Repositories\EnderecoRepositoryEloquent'
+        );
     }
 }

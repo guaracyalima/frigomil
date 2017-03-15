@@ -82,8 +82,11 @@
 @media only screen and (min-width: 46em){
   //se quebrar o responsivo é aqui
   .form-control{
-    width: 448px;
-    margin-left: -10em;
+    //width: 448px;
+    //margin-left: -10em;
+    //height: 56px;
+    width: 100%;
+    /* margin-left: -10em; */
     height: 56px;
   }
 

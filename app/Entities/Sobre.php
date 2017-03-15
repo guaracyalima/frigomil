@@ -13,8 +13,10 @@ class Sobre extends Model implements Transformable
     protected $fillable = [
         'titulo',
         'slogan',
-        'coldireita',
-        'coldesquerda'
+        'missao',
+        'visao',
+        'valores',
+        'imagem'
     ];
 
 }

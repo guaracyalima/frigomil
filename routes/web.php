@@ -11,9 +11,6 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('index');
-//});
 
 Route::get('/', 'FrontController@index');
 Route::post('contato', 'FrontController@contato');
@@ -25,38 +22,11 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/admin', 'AdminController@index');
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth.checkrole', 'as' => 'admin.'], function (){
-    Route::get('', 'AdminController@index');
-
-    Route::get('topo', ['as' => 'topo', 'uses' =>'TopoController@index']);
-    Route::post('topo', ['as' => 'topo.create', 'uses' =>'TopoController@create']);
-
-    Route::get('contato', ['as' => 'contato', 'uses' =>'ContatoController@index']);
-    Route::post('contato', ['as' => 'contato.create', 'uses' =>'ContatoController@create']);
-
-    Route::get('sobre', ['as' => 'sobre.store', 'uses' =>'SobreController@index']);
-    Route::post('sobre', ['as' => 'sobre.create', 'uses' =>'SobreController@create']);
-
-
-    Route::get('produtos', ['as' => 'produtos.store', 'uses' =>'ProductsController@index']);
-    Route::post('produtos/create', ['as' => 'produtos.create', 'uses' =>'ProductsController@create']);
-});
-
 Route::get('/home', 'HomeController@index');
 Route::get('admin/home', 'AdminController@index');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth.checkrole',  'as' => 'admin.'], function (){
     Route::get('', 'AdminController@index');
-
-
-    Route::get('topo', ['as' => 'topo', 'uses' =>'TopoController@index']);
-    Route::post('topo', ['as' => 'topo.create', 'uses' =>'TopoController@create']);
-
-    Route::get('contato', ['as' => 'contato', 'uses' =>'ContatoController@index']);
-    Route::post('contato', ['as' => 'contato.create', 'uses' =>'ContatoController@create']);
-
-    Route::get('sobre', ['as' => 'sobre.store', 'uses' =>'SobreController@index']);
-    Route::post('sobre', ['as' => 'sobre.create', 'uses' =>'SobreController@create']);
 
     //admin menus
     Route::get('menu', ['as' => 'menu.index', 'uses' =>'MenuController@index']);
@@ -116,6 +86,54 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth.checkrole',  'as' => 'a
     Route::post('telefone/update/{id}', ['as' => 'telefone.update', 'uses' =>'TelefoneController@update']);
     Route::get('telefone/destroy/{id}', ['as' => 'telefone.destroy', 'uses' =>'TelefoneController@destroy']);
 
+    //admin sobre
+    Route::get('sobre', ['as' => 'sobre.index', 'uses' =>'SobreController@index']);
+    Route::get('sobre/create', ['as' => 'sobre.create', 'uses' =>'SobreController@create']);
+    Route::get('sobre/edit/{id}', ['as' => 'sobre.edit', 'uses' =>'SobreController@edit']);
+    Route::post('sobre/store', ['as' => 'sobre.store', 'uses' =>'SobreController@store']);
+    Route::post('sobre/update/{id}', ['as' => 'sobre.update', 'uses' =>'SobreController@update']);
+    Route::get('sobre/destroy/{id}', ['as' => 'sobre.destroy', 'uses' =>'SobreController@destroy']);
 
+
+    //PRODUTOS
+    Route::get('produtos', ['as' => 'produtos.index', 'uses' =>'ProductsController@index']);
+    Route::get('produtos/create', ['as' => 'produtos.create', 'uses' =>'ProductsController@create']);
+    Route::get('produtos/edit/{id}', ['as' => 'produtos.edit', 'uses' =>'ProductsController@edit']);
+    Route::post('produtos/store', ['as' => 'produtos.store', 'uses' =>'ProductsController@store']);
+    Route::post('produtos/update/{id}', ['as' => 'produtos.update', 'uses' =>'ProductsController@update']);
+    Route::get('produtos/destroy/{id}', ['as' => 'produtos.destroy', 'uses' =>'ProductsController@destroy']);
+
+
+    //Clientes
+    Route::get('clientes', ['as' => 'clientes.index', 'uses' =>'ClientesController@index']);
+    Route::get('clientes/create', ['as' => 'clientes.create', 'uses' =>'ClientesController@create']);
+    Route::get('clientes/edit/{id}', ['as' => 'clientes.edit', 'uses' =>'ClientesController@edit']);
+    Route::post('clientes/store', ['as' => 'clientes.store', 'uses' =>'ClientesController@store']);
+    Route::post('clientes/update/{id}', ['as' => 'clientes.update', 'uses' =>'ClientesController@update']);
+    Route::get('clientes/destroy/{id}', ['as' => 'clientes.destroy', 'uses' =>'ClientesController@destroy']);
+
+    //Topo
+    Route::get('topo', ['as' => 'topo.index', 'uses' =>'TopoController@index']);
+    Route::get('topo/create', ['as' => 'topo.create', 'uses' =>'TopoController@create']);
+    Route::get('topo/edit/{id}', ['as' => 'topo.edit', 'uses' =>'TopoController@edit']);
+    Route::post('topo/store', ['as' => 'topo.store', 'uses' =>'TopoController@store']);
+    Route::post('topo/update/{id}', ['as' => 'topo.update', 'uses' =>'TopoController@update']);
+    Route::get('topo/destroy/{id}', ['as' => 'topo.destroy', 'uses' =>'TopoController@destroy']);
+
+    //Email
+    Route::get('email', ['as' => 'email.index', 'uses' =>'EmailController@index']);
+    Route::get('email/create', ['as' => 'email.create', 'uses' =>'EmailController@create']);
+    Route::get('email/edit/{id}', ['as' => 'email.edit', 'uses' =>'EmailController@edit']);
+    Route::post('email/store', ['as' => 'email.store', 'uses' =>'EmailController@store']);
+    Route::post('email/update/{id}', ['as' => 'email.update', 'uses' =>'EmailController@update']);
+    Route::get('email/destroy/{id}', ['as' => 'email.destroy', 'uses' =>'EmailController@destroy']);
+
+    //Endereco
+    Route::get('endereco', ['as' => 'endereco.index', 'uses' =>'EnderecoController@index']);
+    Route::get('endereco/create', ['as' => 'endereco.create', 'uses' =>'EnderecoController@create']);
+    Route::get('endereco/edit/{id}', ['as' => 'endereco.edit', 'uses' =>'EnderecoController@edit']);
+    Route::post('endereco/store', ['as' => 'endereco.store', 'uses' =>'EnderecoController@store']);
+    Route::post('endereco/update/{id}', ['as' => 'endereco.update', 'uses' =>'EnderecoController@update']);
+    Route::get('endereco/destroy/{id}', ['as' => 'endereco.destroy', 'uses' =>'EnderecoController@destroy']);
 });
 

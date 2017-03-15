@@ -16,7 +16,7 @@ class Product extends Model implements Transformable
         'preco',
         'peso',
         'fornecedor',
-        'img'
+        'imagem'
     ];
 
 }

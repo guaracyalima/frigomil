@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.index')
 
 @section('conteudo')
 
@@ -7,10 +7,10 @@
     <h3>Gerenciar dados de contato</h3>
     @include('errors._check')
 
-    {!! Form::model($contatos,['route' => ['admin.contatos.update', $contatos->id]]) !!}
+    {!! Form::model($email,['route' => ['admin.email.update', $email->id]]) !!}
 
 
-    @include('admin.contatos._form')
+    @include('admin.email._form')
 
     {!! Form::submit('Editar', ['class' => 'btn btn-primary center-block']) !!}
 

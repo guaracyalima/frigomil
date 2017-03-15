@@ -1,12 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.index')
 
 @section('conteudo')
-
-
-
-
-
-
 
     <h3>Editar filial {{$filials->id}}</h3>
     @include('errors._check')

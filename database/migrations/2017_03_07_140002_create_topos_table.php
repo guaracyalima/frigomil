@@ -17,6 +17,7 @@ class CreateToposTable extends Migration
             $table->increments('id');
             $table->text('titulo');
             $table->text('descricao');
+            $table->text('imagem');
             $table->timestamps();
 		});
 	}
